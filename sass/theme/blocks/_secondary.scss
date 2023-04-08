@@ -1,0 +1,15 @@
+.secondary {
+    .container {
+        border-top: 1px solid $miruiro-tx;
+        border-bottom: 1px solid $miruiro-tx;
+        a {
+            text-transform: uppercase;
+            letter-spacing: #{(50/1000)}em;
+            transition: 0.3s ease;
+            &:hover {
+                text-decoration: none;
+                color: $miruiro;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.btn {
+    border-radius: 0;
+}
+.btn-primary {
+    border: 1px solid $kihada;
+    background-color: $kihada;
+    color: $sumi-iro;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: #{(50/1000)}em;
+    transition: all 0.3s ease;
+    min-width: 195px;
+    padding: 0.5rem;
+    &:hover {
+        border: 1px solid $kihada;
+        background-color: $sumi-iro;
+        color: $kihada;
+    }
+    &:focus {
+        border: 1px solid $sumi-iro;
+        background-color: $kihada;
+        color: $sumi-iro;
+        box-shadow: none;
+    }
+}
+.btn-secondary {
+    // border: 1px solid $ra-yellow;
+    // background-color: $ra-yellow;
+    // color: $ra-blue !important;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    min-width: 140px;
+    // &:hover {
+    //     background-color: $ra-blue;
+    //     color: $ra-yellow !important;
+    // }
+}
+
+.btn-outline {
+    border: 1px solid $sumi-iro;
+    color: $sumi-iro;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: #{(50/1000)}em;
+    min-width: 195px;
+    padding: 0.5rem;
+    &:hover {
+        border-color: $miruiro;
+        color: $miruiro;
+        // background-color: white;
+    }
+}
+
+.btn-large {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-next {
+    @extend .btn-outline;
+    &::after {
+        content: "\f105";
+        font-family: 'fontawesome';
+        margin-left: 0.5rem;
+    }
+}
+
+.btn-previous {
+    @extend .btn-outline;
+    &::before {
+        content: "\f104";
+        font-family: 'fontawesome';
+        margin-right: 0.5rem;
+    }
+
+    &::after {
+        content: "";
+    }
+}

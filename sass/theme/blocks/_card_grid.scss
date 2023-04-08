@@ -1,0 +1,28 @@
+.card_grid {
+    .h3::after {
+        content: "";
+        display: block;
+        width: 4rem;
+        margin: 1rem 0;
+        border-top: 2px solid $miruiro;
+    }
+    &__image {
+        aspect-ratio: 16 / 9;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @supports not (aspect-ratio: auto) { 
+        .card_grid__image::before {
+            float: left;
+            padding-top: (9 / 16) * 100%;
+            content: '';
+        }
+        .card_grid__image::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+    }
+}

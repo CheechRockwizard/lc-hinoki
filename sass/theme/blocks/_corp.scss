@@ -1,0 +1,96 @@
+:root {
+    font-size: 20px;
+}
+
+.paneOne div {
+    column-gap: 3rem;
+    text-align: center;
+}
+
+.paneTwo,
+.paneFour,
+.paneSeven {
+    background-color: #BCB58C;
+    color: #fff8f4
+}
+
+.paneTwo img {
+    max-height: 90%;
+}
+
+.paneThree,
+.paneSix,
+.paneEight {
+    background-color: #fff8f4;
+}
+
+.paneThree img,
+.paneFour img,
+.paneSix img {
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    object-fit: cover;
+    display: flex;
+    margin: auto;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.paneThree {
+    text-align: center;
+}
+
+@media (min-width:992px) {
+    .paneThree {
+        text-align: left;
+    }
+}
+
+.paneFour__bg {
+    background-image: url(/wp-content/themes/lc-hinoki/img/corp/lines.svg);
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.paneSix .image {
+    position: relative;
+    max-width: 400px;
+}
+
+.paneSix .bg {
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    content: "";
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #59673f;
+}
+
+.paneSix .bg-2 {
+    background-color: #946f57;
+}
+
+.paneSeven .card {
+    color: #212529;
+}
+
+.paneEight .card {
+    background-color: #BCB58C;
+    color: #fff8f4
+}
+
+.quotes .quote__body {
+    font-size: 1.6rem;
+    color: #212529;
+}
+
+.quotes .quote__attr {
+    text-align: right;
+    color: #212529;
+}
+
+.secondary .container div { font-size: 1rem; margin: 0 0.5rem;}

@@ -1,0 +1,86 @@
+#header {
+    background-color: white;
+    a {
+        transition: all 0.3s ease;
+    }
+    .d-none {
+        transition: all 0;
+    }
+    .social-icons a {
+        color: $miruiro;
+        transition: all 0.3s ease;
+        &:hover {
+            text-decoration: none;
+            color: $kihada;
+        }
+        &:not(:last-of-type) {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .navbar-brand {
+        height: 45px;
+        width: 150px;
+        background-image: url(../img/hinoki-logo.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (min-width:992px) {
+            height: 60px;
+            width: 200px;
+        }
+    }
+
+    #primaryNav {
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+            letter-spacing: #{(50/1000)}em;
+            &:hover {
+                color: $miruiro;
+            }
+            margin-bottom: -1px;
+            &:focus {
+                color: $miruiro;
+            }
+        }
+        
+        #main-menu {
+            border-bottom: 1px solid $miruiro-tx;
+            text-transform: uppercase;
+            font-weight: 300;
+            .active,
+            .current_page_parent {
+                a {
+                    color: $miruiro;
+                    @media (min-width:992px) {
+                        color: $sumi-iro;
+                        border-bottom: 1px solid $miruiro;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        position: absolute;
+        right: 0.5rem;
+    }
+}
+
+// #header {
+//     position: fixed;
+//     height: 70px;
+//     @media (min-width:992px) {
+//         height: 150px;
+//     }
+//     top: 0;
+//     width: 100%;
+//     z-index: 100;
+//     transition: all .3s ease;
+// }
+// #header.hide {
+//     top: -70px;
+//     @media (min-width:992px) {
+//         top: 0px;
+//     }
+// }

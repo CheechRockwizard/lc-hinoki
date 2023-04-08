@@ -1,0 +1,187 @@
+*,
+input,
+select,
+textarea,
+option,
+button {
+    outline: none !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: $miruiro-tx;
+    color: $sumi-iro;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// body {
+//     // background-color: #ffffff;
+// }
+
+main {
+    margin-top: 85px;
+}
+@media (min-width:992px) {
+    main {
+        margin-top: 160px;
+    }
+    .sticky-offset {
+        top: 160px;
+    }
+}
+
+
+hr {
+    outline: none;
+    border: 0;
+    border-top: 1px solid $miruiro-tx;
+    margin: 0;
+    height: 1px;
+}
+
+span.anchor {
+    display: block;
+    position: relative;
+    top: -160px;
+    visibility: hidden;
+}
+
+.a-ul {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+a.no-underline:hover {
+    text-decoration: none !important;
+}
+
+
+@media all and (min-width:992px) {
+    .cols-lg-2 {
+        columns: 2;
+    }
+    .cols-lg-3 {
+        columns: 3;
+    }
+}
+
+
+.grid-sizer,
+.grid-item {
+    width: 25%;
+}
+
+@media screen and (max-width:768px) {
+
+    .grid-sizer,
+    .grid-item {
+        width: 100%;
+    }
+}
+
+.grid-item {
+    padding: 5px;
+}
+
+
+.sep--miruiro {
+    width: 2rem;
+    border: none;
+    border-top: 2px solid $miruiro;
+    opacity: 1;
+    margin: 2rem auto;
+    position: relative;
+    margin: 2rem 0 4rem 0;
+    &::after {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        border-top: 2px solid $miruiro;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.sep--yellow--left {
+    width: 2rem;
+    border: none;
+    // border-top: 2px solid $ra-yellow;
+    opacity: 1;
+    margin: 2rem auto 2rem 0;
+    // position: relative;
+    // margin: 2rem 0 4rem 0;
+    // &::after {
+    //     content: "";
+    //     width: 2rem;
+    //     height: 2rem;
+    //     border-top: 2px solid $ra-yellow;
+    //     position: absolute;
+    //     left: 0;
+    // }
+}
+
+.washi {
+    background-color: $shironeri;
+    padding: 2rem 2rem 0 2rem;
+    position: relative;
+    top: -1rem;
+    &::after {
+        content: "";
+        background-image: url(../img/tear-bottom.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        height: 2rem;
+        bottom: -2rem;
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .content {
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+.wp-block-image {
+    display: flex;
+    margin: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+// amelia events
+@media (min-width:992px) {
+    .am-cf-1 {
+        margin-top: 2rem;
+    }
+}
+label[for="customFields.1.value"] { display: none !important; }
+.am-cf-4 > label.el-form-item__label { display: none !important; }
+.am-cf-4 .el-checkbox__label { font-weight: 300 !important; }
+
+
+section a {
+    font-weight: 600;
+}
+section.secondary a {
+    font-weight: 300;
+}
+
+.cli_setting_save_button {
+    background-color: $miruiro;
+}

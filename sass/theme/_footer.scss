@@ -1,0 +1,53 @@
+.footer {
+    font-size: 1rem;
+    a {
+        transition: all 0.3s ease;
+        &:hover {
+            color: $miruiro;
+            text-decoration: none;
+        }
+        &:focus {
+            color: $miruiro;
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        max-width: 180px;
+    }
+    ul {
+        padding-inline-start: 0;
+    }
+    li {
+        list-style: none;
+        text-transform: uppercase;
+        a {
+            padding: 0.5rem 0;
+            @media (min-width:992px) {
+                padding: 0.25rem 0;
+            }
+            display: inline-block;
+        }
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+    }
+
+    .colophon {
+        border-top: 1px solid $miruiro-tx;
+        font-size: 0.889rem;
+        padding: 0.5rem 0 1rem 0;
+    }
+
+    .menu-footer-nav-1-container,
+    .menu-footer-nav-2-container {
+        text-align: center;
+        @media (min-width:768px) {
+            text-align: left;
+        }
+    }
+}

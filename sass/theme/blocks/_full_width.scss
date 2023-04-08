@@ -1,0 +1,23 @@
+.full_width {
+    a {
+        text-decoration: none;
+        font-weight: 700;
+        &:hover {
+            text-decoration: none;
+        }
+        &.link {
+            display: block;
+            &::after {
+                transition: all 0.3s ease;
+                position: absolute;
+                content: "\e908";
+                font-family: icomoon;
+            }
+            &:hover {
+                &::after {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

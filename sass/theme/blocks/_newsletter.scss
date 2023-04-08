@@ -1,0 +1,41 @@
+.newsletter {
+    background-color: $shironeri;
+    .social-icons {
+        font-size: 2rem;
+        a {
+            &:not(:last-of-type) {
+                margin-right: 2rem;
+            }
+            transition: all 0.3s ease;
+            &:hover {
+                color: $miruiro;
+                text-decoration: none;
+            }
+        }
+    }
+    .mc4wp-form-fields {
+        .newsletter__form {
+            display: flex;
+            flex: 1 auto;
+        }
+        input[type=email] {
+            border: 0;
+            border-radius: 0;
+            width:60%;
+            padding-left: 0.5rem;
+            &::-webkit-input-placeholder {
+                color: #6c757d;
+                opacity: 1;
+            }
+        }
+        input[type=submit],
+        button {
+            background-color: $sumi-iro;
+            color: $shironeri;
+            padding: 0 2rem;
+            font-weight: 600;
+            letter-spacing: #{(50/1000)}em;
+        }
+    }
+
+}

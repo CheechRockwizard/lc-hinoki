@@ -1,0 +1,113 @@
+@media (min-width:992px) {
+    .textBlock-left {
+        .washi {
+            margin-right: -90px;
+            z-index: 1
+        }
+    }
+    .textBlock-right {
+        .washi {
+            margin-left: -90px;
+            z-index: 1;
+        }
+    }
+}
+.imageBlock-right, .imageBlock-left {
+    z-index: 0;
+}
+.imageBlock {
+    
+    position: relative;
+    .attrib {
+        background-color: rgba(0,0,0,0.4);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        font-size: 0.9rem;
+        padding: 0 5px;
+        a {
+            color: white;
+        }
+    }
+    .attrib--left {
+        left: 0;
+    }
+    .attrib--right {
+        right: 0;
+    }
+
+    aspect-ratio: 8 / 3;
+    @supports not (aspect-ratio: 8 / 3) {
+        &::before {
+            float: left;
+            padding-top: ( 3 / 8 ) * 100%;
+            content: '';
+        }
+        &::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+    }
+
+
+    @media (min-width:992px) {
+        aspect-ratio: 4 / 3;
+        @supports not (aspect-ratio: 4 / 3) {
+            &::before {
+                float: left;
+                padding-top: ( 3 / 4 ) * 100%;
+                content: '';
+            }
+            &::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+        }
+
+        &.image--landscape {
+            aspect-ratio: 4 / 3;
+        }
+        &.image--portrait {
+            aspect-ratio: 3 / 4;
+        }
+
+        @supports not (aspect-ratio: 4 / 3) {
+            &.image--landscape::before {
+                float: left;
+                padding-top: ( 3 / 4 ) * 100%;
+                content: '';
+            }
+            &.image--landscape::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+        }
+
+        @supports not (aspect-ratio: 3 / 4) {
+            &.image--portrait::before {
+                float: left;
+                padding-top: ( 4 / 3 ) * 100%;
+                content: '';
+            }
+            &.image--portrait::after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+        }
+
+    }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.cta {
+    text-align: right;
+}
+
+
+

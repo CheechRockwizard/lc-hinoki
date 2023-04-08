@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('../fonts/subset-FuturaPT-Demi.eot');
+    src: url('../fonts/subset-FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-FuturaPT-Demi.woff2') format('woff2'),
+        url('../fonts/subset-FuturaPT-Demi.woff') format('woff'),
+        url('../fonts/subset-FuturaPT-Demi.ttf') format('truetype'),
+        url('../fonts/subset-FuturaPT-Demi.svg#FuturaPT-Demi') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/subset-FuturaPT-LightObl.eot');
+    src: url('../fonts/subset-FuturaPT-LightObl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-FuturaPT-LightObl.woff2') format('woff2'),
+        url('../fonts/subset-FuturaPT-LightObl.woff') format('woff'),
+        url('../fonts/subset-FuturaPT-LightObl.ttf') format('truetype'),
+        url('../fonts/subset-FuturaPT-LightObl.svg#FuturaPT-LightObl') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('../fonts/subset-FuturaPT-Light.eot');
+    src: url('../fonts/subset-FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-FuturaPT-Light.woff2') format('woff2'),
+        url('../fonts/subset-FuturaPT-Light.woff') format('woff'),
+        url('../fonts/subset-FuturaPT-Light.ttf') format('truetype'),
+        url('../fonts/subset-FuturaPT-Light.svg#FuturaPT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('../fonts/subset-FuturaPT-DemiObl.eot');
+    src: url('../fonts/subset-FuturaPT-DemiObl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-FuturaPT-DemiObl.woff2') format('woff2'),
+        url('../fonts/subset-FuturaPT-DemiObl.woff') format('woff'),
+        url('../fonts/subset-FuturaPT-DemiObl.ttf') format('truetype'),
+        url('../fonts/subset-FuturaPT-DemiObl.svg#FuturaPT-DemiObl') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+html {
+    background-color: #ffffff;
+}
+body {
+    font-family: 'Futura PT',sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .h1, h2, .h2 {
+    font-family: 'Futura PT',sans-serif;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+    line-height: 1.1em;
+}
+h3, .h3, .h99 {
+    font-family: 'Futura PT Demi',sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+.font-weight-normal {
+    font-weight: 300;
+}
+.font-weight-bold {
+    font-weight: 600;
+}
+
+// .hero__subtitle {
+//     font-weight: 400;
+//     font-size: clamp(1.4rem, 10vw, 2rem);
+// }
+// .hero {
+//     color: #ffffff;
+// }
+
+// .font-zero {
+//     font-size: 0;
+// }
+
+h1, .h1 {
+    font-size: clamp( 2rem, 10vw, 2.778rem );
+    letter-spacing: #{(200/1000)}em;
+}
+h2, .h2 {
+    font-size: clamp(1.6rem, 10vw, 2.222rem);
+    letter-spacing: #{(200/1000)}em;
+
+}
+h3, .h3 {
+    font-size: clamp(1.1rem, 10vw, 1.333rem);
+    letter-spacing: #{(200/1000)}em;
+}
+.heading--underline::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    margin: 2rem 0;
+    border-top: 2px solid $miruiro;
+}
+.heading--underline_center::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    margin: 2rem auto;
+    border-top: 2px solid $miruiro;
+}
+h3, .h3 {
+    &.heading--underline::after {
+        margin: 1rem 0;
+    }
+    &.heading--underline_center::after {
+        margin: 1rem auto;
+    }
+}
+
+.h99 {
+    font-size: 1rem;
+    color: inherit;
+}
+
+.text-larger {
+    font-size: 1.2em;
+}
+.text-largest {
+    font-size: 1.6em;
+}
+.text-smaller {
+    font-size: 0.9em;
+}
+
+strong {
+    font-weight: 600;
+}
+
+.max-ch {
+    max-width: 70ch;
+}
+
+.small {
+    font-size: 12px;
+}
+  
+  
