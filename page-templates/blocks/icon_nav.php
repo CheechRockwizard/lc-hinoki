@@ -1,5 +1,5 @@
 <section class="icon_nav">
-    <div class="container-xl pb-5">
+    <div class="container-xl pb-3">
         <?php
         $descriptions = array();
         while (have_rows('navigation', 'options')) {
