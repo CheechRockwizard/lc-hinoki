@@ -186,6 +186,12 @@ section.secondary a {
     background-color: $miruiro;
 }
 
+
+.featured_image {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
 .carousel-control-next, .carousel-control-prev {
     width: 10%;
 }

@@ -16,7 +16,7 @@ foreach ($posts as $p) {
                     <div class="washi mb-5">
                         <div class="row py-3">
                             <div class="<?=$colsLeft?> mb-2">
-                                <?=get_the_post_thumbnail($p, 'full')?>
+                                <?=get_the_post_thumbnail($p, 'full', array('class' => 'featured_image'))?>
                             </div>
                             <div class="<?=$colsRight?> mb-2">
                                 <h2 class="h3 heading--underline">

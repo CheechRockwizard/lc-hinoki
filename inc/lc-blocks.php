@@ -323,6 +323,17 @@ function acf_flex_block()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block(array(
+            'name'				=> "LC Icon Nav",
+            'title'				=> __("LC Icon Nav"),
+            'description'		=> __(''),
+            'render_template'	=> 'page-templates/blocks/icon_nav.php',
+            'category'			=> 'layout',
+            'icon'				=> 'excerpt-view',
+            'keywords'			=> array( 'icon', 'nav' ),
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
     }
 }
 add_action('acf/init', 'acf_flex_block');
