@@ -7,16 +7,18 @@ $posts = get_field('post');
         <div class="carousel slide" id="featured" data-ride="carousel">
             <div class="carousel-inner">
                 <?php
-                $active = 'active';
+                $colsLeft = count($posts) > 1 ? 'col-md-3 offset-md-1' : 'col-md-4';
+$colsRight = count($posts) > 1 ? 'col-md-7' : 'col-md-8';
+$active = 'active';
 foreach ($posts as $p) {
     ?>
                 <div class="carousel-item <?=$active?>">
-                    <div class="washi p-4 mb-5">
-                        <div class="row">
-                            <div class="col-md-3 offset-md-1 mb-2">
+                    <div class="washi mb-5">
+                        <div class="row py-3">
+                            <div class="<?=$colsLeft?> mb-2">
                                 <?=get_the_post_thumbnail($p, 'full')?>
                             </div>
-                            <div class="col-md-7 mb-2">
+                            <div class="<?=$colsRight?> mb-2">
                                 <h2 class="h3 heading--underline">
                                     <?=get_the_title($p)?>
                                 </h2>
