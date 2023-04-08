@@ -21,7 +21,7 @@ if ($q->have_posts()) {
 <section class="whatson">
     <div class="container-xl">
         <div class="washi mx-md-4 pb-4">
-            <h2 class="h3 heading--underline">What's On -- TEST</h2>
+            <h2 class="h3 heading--underline">What's On</h2>
             <?php
                 while ($q->have_posts()) {
                     $q->the_post();
