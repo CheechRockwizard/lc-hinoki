@@ -51,20 +51,24 @@ function add_acf_columns($columns)
       'end_date' => __('End'),
     ));
 }
-// add_filter('manage_whatson_posts_columns', 'add_acf_columns');
+add_filter('manage_whatson_posts_columns', 'add_acf_columns');
 
 function whatson_custom_column($column, $post_id)
 {
     switch ($column) {
         case 'start_date':
-            echo get_post_meta($post_id, 'start_date', true);
+            $date = strtotime(get_post_meta($post_id, 'start_date', true));
+            echo date('jS M Y', $date);
             break;
         case 'end_date':
-            echo get_post_meta($post_id, 'end_date', true);
+            if (get_post_meta($post_id, 'end_date', true)) {
+                $date = strtotime(get_post_meta($post_id, 'end_date', true));
+                echo date('jS M Y', $date);
+            }
             break;
     }
 }
-// add_action('manage_whatson_posts_custom_column', 'whatson_custom_column', 10, 2);
+add_action('manage_whatson_posts_custom_column', 'whatson_custom_column', 10, 2);
 
 
 function lc_register_taxes()
